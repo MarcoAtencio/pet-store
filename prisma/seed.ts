@@ -1,6 +1,4 @@
-import { PrismaClient } from '@prisma/client';
-
-const db = new PrismaClient();
+import db from '@/app/services/db';
 
 async function main() {
   await db.category.deleteMany();
